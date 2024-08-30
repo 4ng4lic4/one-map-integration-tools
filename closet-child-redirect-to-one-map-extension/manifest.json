@@ -1,0 +1,18 @@
+{
+    "name": "ClosetChild redirect to One Map",
+    "version": "0.1.0",
+    "description": "Asking for shipping quotes from ClosetChild on One Map (by FROM JAPAN) made easy",
+    "content_scripts": [
+        {
+            "matches": ["*://*.closetchildonlineshop.com/product/*"],
+            "js": ["contentScriptClosetChild.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["*://*.fromjapan.co.jp/japan/en/special/order/confirmother/*"],
+            "js": ["contentScriptOneMap.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version": 3
+}
