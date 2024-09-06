@@ -12,6 +12,12 @@
             "matches": ["*://*.fromjapan.co.jp/japan/en/special/order/confirmother/*"],
             "js": ["contentScriptOneMap.js"],
             "run_at": "document_end"
+        },
+        {
+            "matches": ["*://*.wunderwelt.jp/en/products/*",
+                        "*://*.wunderwelt.jp/products/*"],
+            "js": ["contentScriptWunderWelt.js"],
+            "run_at": "document_end"
         }
     ],
     "manifest_version": 3
